@@ -1,0 +1,33 @@
+.column {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.header {
+    background-color: #2ea0b9;
+    text-align: center;
+    padding: 20px;
+}
+
+#href1 {
+    text-align: right;
+}
+
