@@ -5,16 +5,18 @@
     font-weight: bold;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.row {
+    display:flex;
+    flex-wrap:wrap;
+    padding: 100px;
+    justify-content: center;
+    gap: 30px;
 }
 
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
+.row:after {
+    content: "";
+    display: flex;
+    clear: both;
 }
 
 table, th, td {
@@ -24,10 +26,111 @@ table, th, td {
 .header {
     background-color: #2ea0b9;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+    justify-content: center;
 }
 
-#href1 {
-    text-align: right;
+marquee {
+    font-size: 20px;
+    font-weight: bold;
 }
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+nav {
+    text-align: right;
+    background-color: #2ea0b9;
+    a.navi {
+    color:black;
+    text-decoration: none;
+    }
+}
+
+a.smp, a.sma, a.humas, a.kepengasuhan, a.mq {
+    padding: 5px; /* Tambahkan padding agar border tidak terlalu dekat dengan teks */
+    background-color: rgb(5, 92, 92);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 10px;
+    width: 350px;
+    justify-content: space-between; /* Mengatur jarak antara tombol */
+    text-align: center; /* Mengatur teks ke tengah */
+    line-height: normal; /* Mengatur ketinggian baris agar teks berada di tengah */
+    text-decoration: none;
+}
+
+
+a.smp:hover {
+    background-color:rgb(4, 40, 40);
+}
+
+a.sma:hover {
+    background-color:rgb(4, 40, 40);
+}
+
+a.mq:hover {
+    background-color:rgb(4, 40, 40);
+}
+
+a.humas:hover {
+    background-color:rgb(4, 40, 40);
+}
+
+a.kepengasuhan:hover {
+    background-color:rgb(4, 40, 40);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    justify-content: center;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 100px) {
+    body {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+    }
+}
+
+
 
